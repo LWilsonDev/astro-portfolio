@@ -1,0 +1,30 @@
+---
+description: Portfolio positioning, voice, and visual direction for a React Native contractor site
+alwaysApply: true
+---
+
+# Portfolio site — context and direction
+
+## Audience and positioning
+
+- Primary audience: hiring managers, technical leads, and founders evaluating mobile contractors.
+- Position the author as a **React Native** specialist who ships production apps and engagements, not only tutorials or greenfield demos.
+
+## Content pillars (surface explicitly)
+
+1. **Bluetooth and IoT** — BLE, device pairing, background behavior, firmware/protocol edges, reliability on real hardware. Use concrete outcomes (latency, reconnect strategy, battery) where possible.
+2. **React Native** — architecture, performance, native modules when relevant, release and store readiness.
+3. **Full-stack development** — APIs, auth, data modeling, sync, and how mobile fits the larger system.
+4. **Accessibility** — inclusive UI on mobile and web; testing with assistive tech; pairing with design for usable defaults.
+5. **Serverless and cloud** — functions, queues, events, infra-as-code mindset; cost and operational tradeoffs in plain language.
+
+## Tone and style
+
+- **Professional and slick**: confident, concise copy; refined typography and spacing; cohesive palette; subtle, purposeful motion (never noisy or gimmicky).
+- Prefer evidence over adjectives: roles, timelines, stack, metrics, or scope beats generic “passionate developer” language.
+- Contractor-friendly: clarity on engagement types (fractional, project, advisory) if that appears on the site.
+
+## Implementation notes (current stack)
+
+- Site is **Astro**. Prefer static content and minimal JS; use Astro islands only when interactivity is needed.
+- When adding **React** for islands, keep components small and accessible by default (see the accessibility rule).

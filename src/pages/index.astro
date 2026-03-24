@@ -1,17 +1,219 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
 
+const title = "React Native contractor — mobile, BLE, and full-stack delivery";
+const description =
+	"React Native specialist shipping production apps: Bluetooth and IoT, performance and release readiness, APIs and serverless, accessible mobile UX, and disciplined use of AI tooling for speed without cutting corners.";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout {title} {description}>
+	<header>
+		<div class="header-inner">
+			<p class="site-title"><a href="/">Your Name</a></p>
+			<nav aria-label="Primary">
+				<ul>
+					<li><a href="#expertise">Expertise</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#engagements">Engagements</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+		<section class="hero" aria-labelledby="hero-heading">
+			<p class="hero-badge">Available for fractional &amp; project work</p>
+			<h1 id="hero-heading">React Native for products that leave the simulator</h1>
+			<p class="lead">
+				I build and harden mobile experiences for teams that need reliability on real devices—BLE
+				peripherals, background constraints, store policies, and the API surface behind the app. I use
+				modern AI tooling to compress exploration and boilerplate, then validate like any other senior
+				ship: review, tests, accessibility, and security—so velocity shows up as merged PRs, not
+				unknowns. Clear communication, predictable delivery, and codebases teams can own after handoff.
+			</p>
+			<div class="cta-row">
+				<a class="button button--primary" href="#contact">Start a conversation</a>
+				<a class="button button--ghost" href="#work">View selected work</a>
+			</div>
+		</section>
+
+		<section id="expertise" aria-labelledby="expertise-heading">
+			<h2 id="expertise-heading">Where I go deep</h2>
+			<p class="section-intro">
+				Evidence-driven engineering across the stack—so mobile is not the bottleneck when hardware,
+				backend, or accessibility matters.
+			</p>
+			<div class="highlight-callout" role="region" aria-labelledby="ai-callout-heading">
+				<h3 id="ai-callout-heading">AI-assisted velocity, production-grade standards</h3>
+				<p>
+					Fluent with today’s AI coding and research workflows for prototyping, refactors, docs, and
+					test scaffolding—always paired with human judgment. Nothing ships on model confidence alone:
+					edge cases, native interop, privacy, and inclusive UX get the same scrutiny whether the first
+					draft came from my keyboard or an assistant.
+				</p>
+			</div>
+			<div class="card-grid">
+				<article class="card">
+					<h3>Bluetooth &amp; IoT</h3>
+					<p>
+						BLE pairing, GATT services, background modes, reconnect strategy, and firmware quirks.
+						I optimize for latency, battery, and behavior when radios are lossy.
+					</p>
+				</article>
+				<article class="card">
+					<h3>React Native</h3>
+					<p>
+						Architecture that scales, native modules when JS hits a wall, profiling, and release
+						hygiene—OTA, crashes, and store readiness without drama.
+					</p>
+				</article>
+				<article class="card">
+					<h3>Full-stack</h3>
+					<p>
+						Auth, data modeling, sync, and APIs mobile teams actually want to consume. I align
+						mobile workflows with how your backend really behaves.
+					</p>
+				</article>
+				<article class="card">
+					<h3>Accessibility</h3>
+					<p>
+						Inclusive defaults, VoiceOver / TalkBack, contrast and focus—not a post-launch audit.
+						I pair with design to keep usable patterns shippable.
+					</p>
+				</article>
+				<article class="card">
+					<h3>Serverless &amp; cloud</h3>
+					<p>
+						Functions, queues, events, and infra-as-code where it pays off. I spell out cost and
+						operational tradeoffs in plain language.
+					</p>
+				</article>
+				<article class="card">
+					<h3>AI tooling in the loop</h3>
+					<p>
+						Prompt design, context packaging, and “know when to ignore the suggestion” instincts from
+						real RN and native work. Faster spikes and migrations; the same bar for correctness,
+						reviews, and maintainability.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="work" aria-labelledby="work-heading">
+			<h2 id="work-heading">Selected work</h2>
+			<p class="section-intro">
+				Representative engagements; names anonymized where contracts require it.
+			</p>
+			<div class="project-list">
+				<article class="project">
+					<div>
+						<p class="project-meta">Consumer hardware · 12 mo</p>
+						<h3>Companion app for a connected wearable</h3>
+					</div>
+					<div>
+						<p>
+							Led React Native development for onboarding, device firmware updates over BLE, and
+							background sync. Cut average reconnect time after sleep by restructuring connection
+							state and retry policy; aligned with hardware on MTU and notification throughput.
+						</p>
+						<ul class="tag-list" aria-label="Technologies">
+							<li class="tag">React Native</li>
+							<li class="tag">BLE</li>
+							<li class="tag">TypeScript</li>
+							<li class="tag">AWS Lambda</li>
+						</ul>
+					</div>
+				</article>
+				<article class="project">
+					<div>
+						<p class="project-meta">Health · 6 mo</p>
+						<h3>Clinical-adjacent data capture</h3>
+					</div>
+					<div>
+						<p>
+							Built forms and offline-first sync with conflict handling; worked with compliance
+							constraints without paralyzing UX. Added screen-reader coverage for critical flows and
+							documented patterns for the in-house team.
+						</p>
+						<ul class="tag-list" aria-label="Technologies">
+							<li class="tag">React Native</li>
+							<li class="tag">SQLite</li>
+							<li class="tag">REST</li>
+							<li class="tag">WCAG-oriented UX</li>
+						</ul>
+					</div>
+				</article>
+				<article class="project">
+					<div>
+						<p class="project-meta">B2B SaaS · 4 mo</p>
+						<h3>Field technician mobile suite</h3>
+					</div>
+					<div>
+						<p>
+							Replaced a legacy hybrid shell with RN, integrated barcode and printer hardware where
+							needed, and standardized error reporting. Shipped phased rollout with crash budgets
+							and staged feature flags.
+						</p>
+						<ul class="tag-list" aria-label="Technologies">
+							<li class="tag">React Native</li>
+							<li class="tag">Native modules</li>
+							<li class="tag">GraphQL</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section id="engagements" aria-labelledby="engagements-heading">
+			<h2 id="engagements-heading">How we can work together</h2>
+			<p class="section-intro">
+				Flexible shapes depending on where you are in the product lifecycle.
+			</p>
+			<div class="engagement">
+				<article>
+					<h3>Fractional lead</h3>
+					<p>Ongoing architecture, reviews, and pairing—best when you have a team that needs senior RN direction.</p>
+				</article>
+				<article>
+					<h3>Project delivery</h3>
+					<p>
+						Scoped milestones from prototype to store submission, with clear handoff docs and knowledge transfer.
+					</p>
+				</article>
+				<article>
+					<h3>Advisory</h3>
+					<p>
+						Short audits on BLE reliability, performance, accessibility risk, or release process—with actionable
+						next steps.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="contact" aria-labelledby="contact-heading">
+			<div class="contact-panel">
+				<h2 id="contact-heading">Tell me about your product</h2>
+				<p>
+					Share stack, timeline, and what “done” looks like. I reply within two business days with
+					availability and next steps.
+				</p>
+				<a class="button button--primary" href="mailto:hello@example.com?subject=Project%20inquiry"
+					>Email hello@example.com</a
+				>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-inner">
+			<p>© {new Date().getFullYear()} Your Name. Based in your city / working globally.</p>
+			<p>
+				<a href="https://www.linkedin.com/">LinkedIn</a>
+				<span aria-hidden="true"> · </span>
+				<a href="https://github.com/">GitHub</a>
+			</p>
+		</div>
+	</footer>
+</BaseLayout>
