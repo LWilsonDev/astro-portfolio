@@ -2,15 +2,15 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 
-const title = "React Native contractor — mobile, BLE, and full-stack delivery";
+const title = "Lucy Wilson — Lead Software Engineer · Mobile, Connected Products, Full-stack";
 const description =
-	"React Native specialist shipping production apps: Bluetooth and IoT, performance and release readiness, APIs and serverless, accessible mobile UX, and disciplined use of AI tooling for speed without cutting corners.";
+	"Lead software engineer specialising in mobile and connected products. Sole engineer behind a 1M+ user React Native app — owning the mobile client, backend APIs, and cloud. Available for contract work.";
 ---
 
 <BaseLayout {title} {description}>
 	<header>
 		<div class="header-inner">
-			<p class="site-title"><a href="/">Your Name</a></p>
+			<p class="site-title"><a href="/">Lucy Wilson</a></p>
 			<nav aria-label="Primary">
 				<ul>
 					<li><a href="#expertise">Expertise</a></li>
@@ -24,78 +24,89 @@ const description =
 
 	<main id="main">
 		<section class="hero" aria-labelledby="hero-heading">
-			<p class="hero-badge">Available for fractional &amp; project work</p>
-			<h1 id="hero-heading">React Native for products that leave the simulator</h1>
+			<p class="hero-badge">Available for contract &amp; full-time employment</p>
+			<h1 id="hero-heading">Lead software engineer for mobile and connected products</h1>
 			<p class="lead">
-				I build and harden mobile experiences for teams that need reliability on real devices—BLE
-				peripherals, background constraints, store policies, and the API surface behind the app. I use
-				modern AI tooling to compress exploration and boilerplate, then validate like any other senior
-				ship: review, tests, accessibility, and security—so velocity shows up as merged PRs, not
-				unknowns. Clear communication, predictable delivery, and codebases teams can own after handoff.
+				I take mobile and connected products end to end — the React Native client, the backend APIs,
+				and the cloud behind them. I've been the sole engineer on a 1M+ user app, designed Bluetooth
+				device protocols from scratch, and led IoT security compliance. Bring me in to set technical
+				direction, ship hard features, or get a connected product over the line.
 			</p>
 			<div class="cta-row">
 				<a class="button button--primary" href="#contact">Start a conversation</a>
 				<a class="button button--ghost" href="#work">View selected work</a>
 			</div>
+			<div class="proof-bar" role="list" aria-label="Key highlights">
+				<div class="proof-item" role="listitem">
+					<span class="proof-value">1M+</span>
+					<span class="proof-label">annual app users</span>
+				</div>
+				<div class="proof-item" role="listitem">
+					<span class="proof-value">Sole engineer</span>
+					<span class="proof-label">mobile, backend &amp; cloud</span>
+				</div>
+				<div class="proof-item" role="listitem">
+					<span class="proof-value">BLE &amp; IoT</span>
+					<span class="proof-label">device protocol from scratch</span>
+				</div>
+				<div class="proof-item" role="listitem">
+					<span class="proof-value">AWS &amp; GCP</span>
+					<span class="proof-label">cloud &amp; serverless</span>
+				</div>
+			</div>
 		</section>
 
 		<section id="expertise" aria-labelledby="expertise-heading">
-			<h2 id="expertise-heading">Where I go deep</h2>
+			<h2 id="expertise-heading">Expertise</h2>
 			<p class="section-intro">
-				Evidence-driven engineering across the stack—so mobile is not the bottleneck when hardware,
-				backend, or accessibility matters.
+				Mobile and connected products are my specialism — backed by full-stack and cloud ownership
+				across the whole product lifecycle.
 			</p>
-			<div class="highlight-callout" role="region" aria-labelledby="ai-callout-heading">
-				<h3 id="ai-callout-heading">AI-assisted velocity, production-grade standards</h3>
-				<p>
-					Fluent with today’s AI coding and research workflows for prototyping, refactors, docs, and
-					test scaffolding—always paired with human judgment. Nothing ships on model confidence alone:
-					edge cases, native interop, privacy, and inclusive UX get the same scrutiny whether the first
-					draft came from my keyboard or an assistant.
-				</p>
-			</div>
 			<div class="card-grid">
-				<article class="card">
-					<h3>Bluetooth &amp; IoT</h3>
-					<p>
-						BLE pairing, GATT services, background modes, reconnect strategy, and firmware quirks.
-						I optimize for latency, battery, and behavior when radios are lossy.
-					</p>
-				</article>
 				<article class="card">
 					<h3>React Native</h3>
 					<p>
-						Architecture that scales, native modules when JS hits a wall, profiling, and release
-						hygiene—OTA, crashes, and store readiness without drama.
+						Architecture that scales, native modules when needed, the Expo toolchain, and
+						offline-first data with WatermelonDB. I migrated a legacy monorepo to Expo and own the
+						release process across iOS and Android.
 					</p>
 				</article>
 				<article class="card">
-					<h3>Full-stack</h3>
+					<h3>Bluetooth &amp; IoT</h3>
 					<p>
-						Auth, data modeling, sync, and APIs mobile teams actually want to consume. I align
-						mobile workflows with how your backend really behaves.
+						BLE integration and device protocol design from scratch, with the spec co-owned by the
+						firmware team. I led Ooni's first connected-product capability — real-time, bidirectional
+						data between ovens and phones — and its IoT security compliance (ETSI EN 303 645).
+					</p>
+				</article>
+				<article class="card">
+					<h3>Full-stack &amp; cloud</h3>
+					<p>
+						Serverless APIs, Firebase and Google Cloud, AWS IoT Core, and data modelling for mobile
+						sync. I build and own the backend the app depends on — including a zero-data-loss auth
+						migration to Firebase.
+					</p>
+				</article>
+				<article class="card">
+					<h3>Delivery &amp; CI/CD</h3>
+					<p>
+						Mobile CI/CD pipelines and automated releases that keep delivery predictable, plus a
+						Shopify-driven automation that ships new products with minimal app changes.
 					</p>
 				</article>
 				<article class="card">
 					<h3>Accessibility</h3>
 					<p>
-						Inclusive defaults, VoiceOver / TalkBack, contrast and focus—not a post-launch audit.
-						I pair with design to keep usable patterns shippable.
+						Inclusive defaults built in from the start — screen-reader coverage, contrast, and
+						focus. I've delivered for users with dyslexia, visual impairments, and reduced motor
+						skills.
 					</p>
 				</article>
 				<article class="card">
-					<h3>Serverless &amp; cloud</h3>
+					<h3>AI-assisted delivery</h3>
 					<p>
-						Functions, queues, events, and infra-as-code where it pays off. I spell out cost and
-						operational tradeoffs in plain language.
-					</p>
-				</article>
-				<article class="card">
-					<h3>AI tooling in the loop</h3>
-					<p>
-						Prompt design, context packaging, and “know when to ignore the suggestion” instincts from
-						real RN and native work. Faster spikes and migrations; the same bar for correctness,
-						reviews, and maintainability.
+						I lead AI engineering enablement across the team, introducing tooling that lifts delivery
+						speed and quality — always paired with human review on edge cases, security, and UX.
 					</p>
 				</article>
 			</div>
@@ -104,62 +115,55 @@ const description =
 		<section id="work" aria-labelledby="work-heading">
 			<h2 id="work-heading">Selected work</h2>
 			<p class="section-intro">
-				Representative engagements; names anonymized where contracts require it.
+				Recent work across consumer hardware and assistive technology.
 			</p>
 			<div class="project-list">
 				<article class="project">
 					<div>
-						<p class="project-meta">Consumer hardware · 12 mo</p>
-						<h3>Companion app for a connected wearable</h3>
+						<p class="project-meta">Consumer hardware · Sep 2023 – Present</p>
+						<h3>Ooni — smart oven companion app</h3>
 					</div>
 					<div>
 						<p>
-							Led React Native development for onboarding, device firmware updates over BLE, and
-							background sync. Cut average reconnect time after sleep by restructuring connection
-							state and retry policy; aligned with hardware on MTU and notification throughput.
+							After joining a small team, I quickly became the sole mobile and full-stack engineer on Ooni's React Native app (1M+ annual users). I
+							architected Ooni Connect — their first Bluetooth integration — enabling real-time,
+							bidirectional data between smart ovens and phones, designed a new BLE device protocol
+							from scratch with the firmware team, and led IoT security compliance (ETSI EN 303
+							645). I built an offline-first platform on WatermelonDB and serverless APIs, migrated
+							auth to Firebase / GCP with zero data loss, and replatformed a legacy monorepo to Expo and Netlify, for simple updates, and fast releases
 						</p>
 						<ul class="tag-list" aria-label="Technologies">
 							<li class="tag">React Native</li>
-							<li class="tag">BLE</li>
 							<li class="tag">TypeScript</li>
-							<li class="tag">AWS Lambda</li>
+							<li class="tag">Expo</li>
+							<li class="tag">Bluetooth / BLE</li>
+							<li class="tag">AWS IoT Core</li>
+							<li class="tag">Firebase / GCP</li>
+							<li class="tag">WatermelonDB</li>
+							<li class="tag">Node / Serverless</li>
 						</ul>
 					</div>
 				</article>
 				<article class="project">
 					<div>
-						<p class="project-meta">Health · 6 mo</p>
-						<h3>Clinical-adjacent data capture</h3>
+						<p class="project-meta">Education &amp; assistive tech · Aug 2020 – Sep 2023</p>
+						<h3>Present Pal — accessible communication app</h3>
 					</div>
 					<div>
 						<p>
-							Built forms and offline-first sync with conflict handling; worked with compliance
-							constraints without paralyzing UX. Added screen-reader coverage for critical flows and
-							documented patterns for the in-house team.
+							I was the senior React Native developmer for Present Pal, making public speaking more accessible
+							for users with dyslexia, visual impairments, and reduced motor skills. I shipped
+							consistent experiences across iOS and Android (phones and tablets), mentored a 4-person
+							team — driving architecture and code review — and extended a PHP / Laravel backend to
+							enable new features. Introduced unit testing in TypeScript and PHP with Jest.
 						</p>
 						<ul class="tag-list" aria-label="Technologies">
 							<li class="tag">React Native</li>
-							<li class="tag">SQLite</li>
-							<li class="tag">REST</li>
-							<li class="tag">WCAG-oriented UX</li>
-						</ul>
-					</div>
-				</article>
-				<article class="project">
-					<div>
-						<p class="project-meta">B2B SaaS · 4 mo</p>
-						<h3>Field technician mobile suite</h3>
-					</div>
-					<div>
-						<p>
-							Replaced a legacy hybrid shell with RN, integrated barcode and printer hardware where
-							needed, and standardized error reporting. Shipped phased rollout with crash budgets
-							and staged feature flags.
-						</p>
-						<ul class="tag-list" aria-label="Technologies">
-							<li class="tag">React Native</li>
-							<li class="tag">Native modules</li>
-							<li class="tag">GraphQL</li>
+							<li class="tag">TypeScript</li>
+							<li class="tag">iOS &amp; Android</li>
+							<li class="tag">Accessibility</li>
+							<li class="tag">PHP / Laravel</li>
+							<li class="tag">Jest</li>
 						</ul>
 					</div>
 				</article>
@@ -169,24 +173,28 @@ const description =
 		<section id="engagements" aria-labelledby="engagements-heading">
 			<h2 id="engagements-heading">How we can work together</h2>
 			<p class="section-intro">
-				Flexible shapes depending on where you are in the product lifecycle.
+				A few ways I work with teams, depending on where your product is.
 			</p>
 			<div class="engagement">
 				<article>
-					<h3>Fractional lead</h3>
-					<p>Ongoing architecture, reviews, and pairing—best when you have a team that needs senior RN direction.</p>
+					<h3>Lead Engineer</h3>
+					<p>
+						Ongoing architecture, reviews, and pairing — for teams that need senior engineering
+						direction and a full-lifecycle perspective.
+					</p>
 				</article>
 				<article>
 					<h3>Project delivery</h3>
 					<p>
-						Scoped milestones from prototype to store submission, with clear handoff docs and knowledge transfer.
+						Scoped milestones from prototype to store submission, with clear handoff docs. I own the
+						full stack when needed.
 					</p>
 				</article>
 				<article>
 					<h3>Advisory</h3>
 					<p>
-						Short audits on BLE reliability, performance, accessibility risk, or release process—with actionable
-						next steps.
+						Short audits on BLE reliability, IoT architecture, performance, accessibility, or release
+						process — with actionable next steps.
 					</p>
 				</article>
 			</div>
@@ -196,11 +204,13 @@ const description =
 			<div class="contact-panel">
 				<h2 id="contact-heading">Tell me about your product</h2>
 				<p>
-					Share stack, timeline, and what “done” looks like. I reply within two business days with
-					availability and next steps.
+					Share stack, timeline, and what "done" looks like. Message me on LinkedIn and I'll reply
+					within two business days with availability and next steps.
 				</p>
-				<a class="button button--primary" href="mailto:hello@example.com?subject=Project%20inquiry"
-					>Email hello@example.com</a
+				<a
+					class="button button--primary"
+					href="https://www.linkedin.com/in/lucy-wilson-289437158/"
+					>Message me on LinkedIn</a
 				>
 			</div>
 		</section>
@@ -208,11 +218,9 @@ const description =
 
 	<footer>
 		<div class="footer-inner">
-			<p>© {new Date().getFullYear()} Your Name. Based in your city / working globally.</p>
+			<p>© {new Date().getFullYear()} Lucy Wilson. Glasgow, UK — working globally.</p>
 			<p>
-				<a href="https://www.linkedin.com/">LinkedIn</a>
-				<span aria-hidden="true"> · </span>
-				<a href="https://github.com/">GitHub</a>
+				<a href="https://www.linkedin.com/in/lucy-wilson-289437158/">LinkedIn</a>
 			</p>
 		</div>
 	</footer>

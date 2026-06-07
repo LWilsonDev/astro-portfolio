@@ -1,0 +1,17 @@
+---
+description: Use the CV as source of truth when writing or editing portfolio site content
+globs: src/**/*.{astro,md,mdx},content/**/*
+alwaysApply: false
+---
+
+# Portfolio site content
+
+When creating or editing pages, sections, or copy for this site:
+
+1. **Consult [docs/cv.md](./docs/cv.md)** before writing — roles, dates, highlights, skills, and metrics must align with the CV.
+2. **Surface content pillars** from [portfolio-context.mdc](./portfolio-context.mdc) using CV evidence; see each role's "site content angles" in the CV.
+3. **Lead with proof** — use the CV's "Key metrics & proof points" table for hero, about, and experience sections.
+4. **Omit or soften** CV entries marked as secondary narrative (e.g. music/education background) unless the page explicitly needs a leadership or mentoring angle.
+5. **Do not duplicate the full CV** on the site — curate for hiring managers: strongest recent work (Ooni, Estendio) first; concrete outcomes over duty lists.
+
+For positioning, tone, and visual direction, follow [portfolio-context.mdc](./portfolio-context.mdc). For accessibility requirements, follow [web-accessibility.mdc](./web-accessibility.mdc).

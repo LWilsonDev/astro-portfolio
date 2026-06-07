@@ -5,6 +5,16 @@ alwaysApply: true
 
 # Portfolio site — context and direction
 
+## Canonical content source
+
+Authoritative biography, roles, achievements, skills, and proof points live in **[docs/cv.md](./docs/cv.md)**. When drafting or updating site copy (hero, about, experience, case studies, skills, contact):
+
+- **Read the CV first** — treat it as the source of truth for facts, timelines, stack, and outcomes.
+- **Do not invent** roles, employers, metrics, or project details not supported by the CV.
+- **Map to content pillars** (below) while preserving CV accuracy; use the CV's "site content angles" and "proof points" sections to decide what to surface.
+- **Prefer evidence** from the CV (e.g. 1M+ annual app users, Ooni Connect BLE integration, ETSI compliance work) over generic contractor language.
+- **Tone** follows this rule's voice guidelines; **facts** follow the CV.
+
 ## Audience and positioning
 
 - Primary audience: hiring managers, technical leads, and founders evaluating mobile contractors.
