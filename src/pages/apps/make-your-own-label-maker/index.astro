@@ -1,0 +1,83 @@
+---
+import AppMark from "../../../components/AppMark.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import SiteHeader from "../../../components/SiteHeader.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import "../../../styles/global.css";
+
+const title = "Make Your Own Label Maker — LWilsonDev";
+const description =
+	"Create personalised, printable labels for Make Your Own Yoto Cards using photos, text and stickers.";
+---
+
+<BaseLayout {title} {description}>
+	<SiteHeader currentPath={Astro.url.pathname} />
+	<main id="main" class="subpage-main">
+		<nav class="breadcrumbs" aria-label="Breadcrumb">
+			<a href="/apps/">Apps</a>
+			<span aria-hidden="true">/</span>
+			<span aria-current="page">Make Your Own Label Maker</span>
+		</nav>
+
+		<section class="app-hero" aria-labelledby="app-heading">
+			<div>
+				<p class="eyebrow">iOS &amp; Android · Coming soon</p>
+				<h1 id="app-heading">Make Your Own Label Maker</h1>
+				<p class="lead">
+					Design personalised covers for your Make Your Own Yoto Cards, then print them at
+					home at the right size.
+				</p>
+				<div class="cta-row">
+					<span class="store-placeholder">App Store · Coming soon</span>
+					<span class="store-placeholder">Google Play · Coming soon</span>
+				</div>
+			</div>
+			<AppMark size="large" />
+		</section>
+
+		<section aria-labelledby="app-details-heading">
+			<h2 id="app-details-heading">Create, save and print</h2>
+			<p class="section-intro">
+				A straightforward label editor for turning the artwork you already have into a cover
+				that is easy to recognise.
+			</p>
+			<div class="card-grid app-feature-grid">
+				<article class="card">
+					<p class="feature-number">01</p>
+					<h3>Add your artwork</h3>
+					<p>Take a photo or choose one from your library, then position and crop it.</p>
+				</article>
+				<article class="card">
+					<p class="feature-number">02</p>
+					<h3>Make it personal</h3>
+					<p>Add names, titles, type styles and stickers to make each card unmistakable.</p>
+				</article>
+				<article class="card">
+					<p class="feature-number">03</p>
+					<h3>Print at home</h3>
+					<p>Print one label or arrange several on an A4 sheet, ready to trim and stick.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="privacy-panel" aria-labelledby="privacy-heading">
+			<div>
+				<p class="eyebrow">Privacy first</p>
+				<h2 id="privacy-heading">Your designs stay on your device</h2>
+				<p>
+					No account is required. Label projects and selected photos are stored locally, and
+					the current app does not use advertising or analytics services.
+				</p>
+			</div>
+			<a class="button button--ghost" href="/apps/make-your-own-label-maker/privacy-policy/">
+				Read the privacy policy
+			</a>
+		</section>
+
+		<p class="trademark-note">
+			Make Your Own Label Maker is an independent app and is not affiliated with or endorsed by
+			Yoto Play.
+		</p>
+	</main>
+	<SiteFooter />
+</BaseLayout>

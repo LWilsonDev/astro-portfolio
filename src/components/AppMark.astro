@@ -1,0 +1,13 @@
+---
+interface Props {
+	size?: "small" | "large";
+}
+
+const { size = "small" } = Astro.props;
+---
+
+<div class:list={["app-mark", size === "large" && "app-mark--large"]} aria-hidden="true">
+	<span class="app-mark__hole"></span>
+	<span class="app-mark__type">MYO</span>
+	<span class="app-mark__line"></span>
+</div>

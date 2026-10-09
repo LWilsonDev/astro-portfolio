@@ -1,0 +1,47 @@
+---
+import AppMark from "../../components/AppMark.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/global.css";
+
+const title = "Apps — LWilsonDev";
+const description = "Independent apps designed and built by LWilsonDev.";
+---
+
+<BaseLayout {title} {description}>
+	<SiteHeader currentPath={Astro.url.pathname} />
+	<main id="main" class="subpage-main">
+		<section class="page-intro" aria-labelledby="apps-heading">
+			<p class="eyebrow">Independent products</p>
+			<h1 id="apps-heading">Apps</h1>
+			<p class="lead">
+				Small, focused tools designed to solve real problems without unnecessary accounts or clutter.
+			</p>
+		</section>
+
+		<section aria-labelledby="available-apps-heading">
+			<h2 id="available-apps-heading" class="visually-hidden">Available apps</h2>
+			<div class="apps-list">
+				<article class="app-listing">
+					<AppMark size="large" />
+					<div class="app-listing__content">
+						<p class="project-meta">iOS &amp; Android · Coming soon</p>
+						<h2>Make Your Own Label Maker</h2>
+						<p>
+							Create personalised, printable labels for Make Your Own Yoto Cards using your own
+							photos, text and stickers.
+						</p>
+						<div class="app-listing__actions">
+							<a class="button button--primary" href="/apps/make-your-own-label-maker/">
+								View app
+							</a>
+							<a href="/apps/make-your-own-label-maker/privacy-policy/">Privacy policy</a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+	<SiteFooter />
+</BaseLayout>

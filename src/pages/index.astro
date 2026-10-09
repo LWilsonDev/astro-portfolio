@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import AppMark from "../components/AppMark.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
 import "../styles/global.css";
 
 const title = "Lucy Wilson — Lead Software Engineer · Mobile, Connected Products, Full-stack";
@@ -8,19 +11,7 @@ const description =
 ---
 
 <BaseLayout {title} {description}>
-	<header>
-		<div class="header-inner">
-			<p class="site-title"><a href="/">Lucy Wilson</a></p>
-			<nav aria-label="Primary">
-				<ul>
-					<li><a href="#expertise">Expertise</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#engagements">Engagements</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<SiteHeader currentPath={Astro.url.pathname} />
 
 	<main id="main">
 		<section class="hero" aria-labelledby="hero-heading">
@@ -200,6 +191,30 @@ const description =
 			</div>
 		</section>
 
+		<section id="apps" aria-labelledby="apps-heading">
+			<h2 id="apps-heading">Independent apps</h2>
+			<p class="section-intro">
+				Small, focused products I design and build outside client work.
+			</p>
+			<article class="home-app-card">
+				<AppMark size="large" />
+				<div>
+					<p class="project-meta">iOS &amp; Android · Coming soon</p>
+					<h3>Make Your Own Label Maker</h3>
+					<p>
+						Create personalised, printable labels for Make Your Own Yoto Cards using photos,
+						text and stickers.
+					</p>
+					<div class="app-listing__actions">
+						<a class="button button--primary" href="/apps/make-your-own-label-maker/">
+							View app
+						</a>
+						<a href="/apps/">View all apps</a>
+					</div>
+				</div>
+			</article>
+		</section>
+
 		<section id="contact" aria-labelledby="contact-heading">
 			<div class="contact-panel">
 				<h2 id="contact-heading">Tell me about your product</h2>
@@ -216,12 +231,5 @@ const description =
 		</section>
 	</main>
 
-	<footer>
-		<div class="footer-inner">
-			<p>© {new Date().getFullYear()} Lucy Wilson. Glasgow, UK — working globally.</p>
-			<p>
-				<a href="https://www.linkedin.com/in/lucy-wilson-289437158/">LinkedIn</a>
-			</p>
-		</div>
-	</footer>
+	<SiteFooter />
 </BaseLayout>

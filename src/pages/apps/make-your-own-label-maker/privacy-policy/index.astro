@@ -1,0 +1,210 @@
+---
+import SiteFooter from "../../../../components/SiteFooter.astro";
+import SiteHeader from "../../../../components/SiteHeader.astro";
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import "../../../../styles/global.css";
+
+const title = "Privacy Policy — Make Your Own Label Maker";
+const description = "Privacy policy for the Make Your Own Label Maker mobile app.";
+const updated = "9 October 2026";
+---
+
+<BaseLayout {title} {description}>
+	<SiteHeader currentPath={Astro.url.pathname} />
+	<main id="main" class="subpage-main legal-main">
+		<nav class="breadcrumbs" aria-label="Breadcrumb">
+			<a href="/apps/">Apps</a>
+			<span aria-hidden="true">/</span>
+			<a href="/apps/make-your-own-label-maker/">Make Your Own Label Maker</a>
+			<span aria-hidden="true">/</span>
+			<span aria-current="page">Privacy policy</span>
+		</nav>
+
+		<section class="legal-hero" aria-labelledby="policy-heading">
+			<p class="eyebrow">Legal</p>
+			<h1 id="policy-heading">Privacy policy</h1>
+			<p class="lead">
+				This policy explains how Make Your Own Label Maker handles information when you use
+				the mobile app.
+			</p>
+			<p class="legal-updated">Last updated: {updated}</p>
+		</section>
+
+		<div class="legal-layout">
+			<aside class="legal-summary" aria-labelledby="summary-heading">
+				<h2 id="summary-heading">The short version</h2>
+				<ul>
+					<li>No account is required.</li>
+					<li>Your label projects are stored on your device.</li>
+					<li>We do not use advertising or analytics services.</li>
+					<li>We do not sell your personal information.</li>
+				</ul>
+			</aside>
+
+			<article class="legal-content">
+				<section>
+					<h2>1. Who this policy covers</h2>
+					<p>
+						This privacy policy applies to the Make Your Own Label Maker mobile application,
+						operated by LWilsonDev ("we", "us" or "our"). It does not cover third-party
+						websites or services that you choose to open from the app.
+					</p>
+				</section>
+
+				<section>
+					<h2>2. Information the app handles</h2>
+					<h3>Photos and camera images</h3>
+					<p>
+						If you choose to add an image, the app asks for camera or photo-library access. It
+						only accesses a photo when you take or select one. The chosen image is copied into
+						the app's private storage on your device so it can be used in your label.
+					</p>
+
+					<h3>Label projects</h3>
+					<p>
+						Text, images, stickers, layout choices, project names and project dates are saved
+						locally in the app's private storage. We do not receive these projects and the app
+						does not upload them to a server operated by us.
+					</p>
+
+					<h3>Printing</h3>
+					<p>
+						When you choose to print, the app creates a printable image and passes it to your
+						device's print service. Any printer or print service you select may process that
+						content under its own privacy terms. We do not receive a copy.
+					</p>
+
+					<h3>Web image search</h3>
+					<p>
+						The optional web-search feature opens a Google Images search in your browser. Your
+						search terms and normal browser or device information are sent directly to Google,
+						not to us. Google's handling of that information is governed by its own privacy
+						policy. You decide whether to download an image and add it from your photo library.
+					</p>
+
+					<h3>Technical and usage data</h3>
+					<p>
+						The current version of the app does not use analytics, advertising or crash-reporting
+						services and does not collect advertising identifiers, precise location, contacts or
+						account credentials. Apple, Google, your device provider and the app store may process
+						download, diagnostic or transaction information independently under their own terms.
+					</p>
+				</section>
+
+				<section>
+					<h2>3. Device permissions</h2>
+					<div class="permission-grid">
+						<div>
+							<strong>Camera</strong>
+							<span>Used only when you choose to take a photo for a label.</span>
+						</div>
+						<div>
+							<strong>Photo library</strong>
+							<span>Used only when you choose an existing image for a label.</span>
+						</div>
+					</div>
+					<p>
+						You can refuse or withdraw these permissions in your device settings. The app will
+						still work, but features that need the relevant permission will be unavailable.
+					</p>
+				</section>
+
+				<section>
+					<h2>4. How information is used</h2>
+					<p>The app uses information you provide only to:</p>
+					<ul>
+						<li>create, edit, save and preview your label projects;</li>
+						<li>prepare the labels you choose to print; and</li>
+						<li>open a web image search when you request one.</li>
+					</ul>
+					<p>We do not use your content for advertising, profiling or training AI models.</p>
+				</section>
+
+				<section>
+					<h2>5. Sharing and disclosure</h2>
+					<p>
+						We do not sell, rent or share your label projects or personal information with third
+						parties because we do not receive them. Information leaves the app only when you
+						direct it to—for example, by opening Google Images, using your device's print service
+						or interacting with an app store. Those third parties act under their own terms.
+					</p>
+					<p>
+						We may disclose information if required by law, but we can only disclose information
+						that we actually hold.
+					</p>
+				</section>
+
+				<section>
+					<h2>6. Storage, retention and deletion</h2>
+					<p>
+						Label projects and imported images remain on your device until you delete the project
+						or uninstall the app. Your operating system may include app data in a device backup;
+						backup retention is controlled by your device or backup provider. Because the app has
+						no user accounts and we do not hold your projects on our servers, there is no separate
+						online account or cloud record for us to delete.
+					</p>
+				</section>
+
+				<section>
+					<h2>7. Security</h2>
+					<p>
+						Keeping projects in the app's private on-device storage limits their exposure. You
+						should keep your device software up to date and use a screen lock. No storage method is
+						completely secure, so we cannot guarantee absolute security.
+					</p>
+				</section>
+
+				<section>
+					<h2>8. Children</h2>
+					<p>
+						The app is intended to be used by adults and does not knowingly collect personal
+						information from children. A child should use the app only with a parent or guardian's
+						supervision. If you believe a child has sent information to us, please contact us.
+					</p>
+				</section>
+
+				<section>
+					<h2>9. Your choices and rights</h2>
+					<p>
+						You can choose which photos to add, remove saved projects, revoke camera or photo
+						permissions, and uninstall the app to remove its local data. Depending on where you
+						live, you may also have legal rights concerning personal information. As we do not
+						collect your app content or operate user accounts, we will normally have no app data
+						linked to you, but you can contact us with any privacy question.
+					</p>
+				</section>
+
+				<section>
+					<h2>10. International data transfers</h2>
+					<p>
+						We do not transfer your label projects to our servers in any country. Third-party
+						services you choose to use may process information internationally under their own
+						privacy policies.
+					</p>
+				</section>
+
+				<section>
+					<h2>11. Changes to this policy</h2>
+					<p>
+						We may update this policy when the app or legal requirements change. We will post the
+						revised policy on this page and change the date above. Material changes will be
+						communicated in the app where appropriate.
+					</p>
+				</section>
+
+				<section>
+					<h2>12. Contact</h2>
+					<p>
+						For privacy questions or requests, email
+						<a href="mailto:lwilsondev2@gmail.com">lwilsondev2@gmail.com</a>.
+					</p>
+					<p>
+						LWilsonDev is the trading name used by Lucy Wilson, the data controller responsible
+						for the app.
+					</p>
+				</section>
+			</article>
+		</div>
+	</main>
+	<SiteFooter />
+</BaseLayout>

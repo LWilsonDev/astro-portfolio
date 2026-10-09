@@ -1,0 +1,22 @@
+---
+interface Props {
+	currentPath?: string;
+}
+
+const { currentPath = "/" } = Astro.props;
+const appsActive = currentPath.startsWith("/apps");
+---
+
+<header>
+	<div class="header-inner">
+		<p class="site-title"><a href="/" aria-label="LWilsonDev home">LW</a></p>
+		<nav aria-label="Primary">
+			<ul>
+				<li><a href="/#expertise">Expertise</a></li>
+				<li><a href="/#work">Work</a></li>
+				<li><a href="/apps/" aria-current={appsActive ? "page" : undefined}>Apps</a></li>
+				<li><a href="/#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
